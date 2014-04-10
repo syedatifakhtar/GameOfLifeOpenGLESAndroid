@@ -29,7 +29,7 @@ public class OpenGLActivity extends Activity {
 		//Ok now what?
 		if(supportsEs2) {
 			glSurfaceView.setEGLContextClientVersion(2); //We are using opengl2 bitch!!
-			glSurfaceView.setRenderer(new HelloWorldRenderer());//Use my renderer man!!
+			glSurfaceView.setRenderer(new HelloWorldRenderer(this));//Use my renderer man!!
 			renderSet=true;
 		}else {
 			//But the princess is in another castle!!
